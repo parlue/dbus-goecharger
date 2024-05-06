@@ -49,11 +49,10 @@ After that call the install.sh script.
 
 The following script should do everything for you:
 ```
-wget https://github.com/vikt0rm/dbus-goecharger/archive/refs/heads/main.zip
+wget https://github.com/parlue/dbus-goecharger/archive/refs/heads/main.zip
 unzip main.zip "dbus-goecharger-main/*" -d /data
 mv /data/dbus-goecharger-main /data/dbus-goecharger
-chmod a+x /data/dbus-goecharger/install.sh
-/data/dbus-goecharger/install.sh
+chmod a+x /data/dbus-goecharger/*.sh
 rm main.zip
 ```
 ⚠️ Check configuration after that - because service is already installed an running and with wrong connection data (host) you will spam the log-file

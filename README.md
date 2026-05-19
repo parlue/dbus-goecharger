@@ -84,6 +84,12 @@ If you have (only) DC connected PV System you have to edit the lines 201 - 205. 
 
 ## Install & Configuration
 
+wget https://github.com/parlue/dbus-goecharger/archive/refs/tags/main.zip
+unzip main.zip "dbus-goecharger-main/*" -d /data
+mv /data/dbus-goecharger-main /data/dbus-goecharger
+chmod a+x /data/dbus-goecharger/*.sh
+rm main.zip
+
 ## Configure your go-eCharger
 - Wifi Connection has to be established
 - HTTP v2 API has to be enabled
